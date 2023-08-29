@@ -3,11 +3,16 @@ name: Workflow b
 on:
   workflow_dispatch:
 
-
 jobs:
   trigger-workflow:
     runs-on: ubuntu-latest
     steps:
       - name: lets go
         shell: bash
-        run: echo "i am workflow b"
+        run: |
+          echo "i am workflow b"
+          exit 1
+      - name: lets go
+        shell: bash
+        run: |
+          echo "i am workflow b"
