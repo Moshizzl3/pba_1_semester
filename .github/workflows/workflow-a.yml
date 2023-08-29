@@ -1,0 +1,27 @@
+name: Workflow a
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  trigger-workflow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: lets go
+        shell: bash
+        run: echo "i am workflow a"
+
+      - name: trigger wow
+        uses: convictional/trigger-workflow-and-wait@v1.6.1
+        with:
+         owner: Moshizzle
+         repo: pba_1_semester
+         github_token: ${{ secrets.GH_SECRET }}
+         workflow_file_name: workflow-b.yml
+         wait_interval: 10
+         trigger_workflow: true
+         wait_workflow: true
