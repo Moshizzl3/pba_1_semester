@@ -18,10 +18,10 @@ jobs:
       - name: trigger wow
         uses: convictional/trigger-workflow-and-wait@v1.6.1
         with:
-         owner: Moshizzle
+         owner: Moshizzl3
          repo: pba_1_semester
          github_token: ${{ secrets.GH_SECRET }}
-         workflow_file_name: Workflow b
+         workflow_file_name: Workflow-b.yml
          wait_interval: 10
          trigger_workflow: true
          wait_workflow: true
