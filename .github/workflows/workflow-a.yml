@@ -27,3 +27,6 @@ jobs:
           trigger_workflow: true
           wait_workflow: true
           propagate_failure: true
+      - name: lets go 2
+        shell: bash
+        run: echo "i am workflow aaaaa, number 2"
