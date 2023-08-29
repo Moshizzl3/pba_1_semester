@@ -22,6 +22,8 @@ jobs:
          repo: pba_1_semester
          github_token: ${{ secrets.GH_SECRET }}
          workflow_file_name: Workflow-b.yml
+         ref: main
          wait_interval: 10
          trigger_workflow: true
          wait_workflow: true
+         
