@@ -1,0 +1,16 @@
+name: Workflow a
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  trigger-workflow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: lets go
+        shell: bash
+        run: echo "i am workflow a"
