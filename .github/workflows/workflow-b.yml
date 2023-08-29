@@ -12,3 +12,7 @@ jobs:
         run: |
           echo "i am workflow b"
           exit 1
+      - name: lets go
+        shell: bash
+        run: |
+          echo "i am workflow b"
