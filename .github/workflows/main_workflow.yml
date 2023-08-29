@@ -18,7 +18,7 @@ jobs:
         with:
           owner: Moshizzl3
           repo: pba_1_semester
-          github_token: ${{ secrets.GH_TOKEN }}
+          github_token: ${{ secrets.GH_SECRET }}
           workflow_file_name: child_workflow.yml
           ref: main
           wait_interval: 10
