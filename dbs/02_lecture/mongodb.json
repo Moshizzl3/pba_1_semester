@@ -1,0 +1,38 @@
+{
+    "customer_id": 1,
+    "customer_name": "hi",
+    "tickets": [
+        {"ticket_id": 1, 
+    "ticket_lines": [{
+        "passenger":{
+        "first_name": "Lars",
+        "last_name": "Smart"
+         }, 
+        "route":{
+            "departure": {
+                "airline": "Mo flight",
+                "country":"DK", 
+                "city":"kbh", 
+                "airport": "Kastrup",
+                "date": "21-12-2023",
+                "timer": "10:00"
+            }, 
+            "arrival": {
+                "airline": "Mo flight",     
+                "country":"DE", 
+                "city":"berlin", 
+                "airport": "berlin-airport",
+                "date": "21-12-2023",
+                "timer": "10:00"
+            },
+            "type": "business class"
+        },
+        "price": {
+            "amount": 200,
+            "currency": "euro",
+            "VAT": 50
+        }        
+    }],
+    "total_price": 250}
+    ]
+}
